@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarBN - View Shared Car</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/share/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="car-detail">
+            <div class="car-image-section" id="car-image-container">
+                <img id="car-image" src="placeholder-car-image.jpg" alt="Car Image">
+            </div>
+            
+            <div class="car-info">
+                <div class="car-header">
+                    <div class="like-badges-container">
+                        <div class="like-count">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                            <span id="likes-count">120</span>
+                        </div>
+                        <div class="view-count">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                <circle cx="12" cy="12" r="3"></circle>
+                            </svg>
+                            <span id="views-count">0</span>
+                        </div>
+                        <div id="trim-badge" class="badge trim-badge">RS</div>
+                        <div id="rarity-badge" class="badge rarity-badge">Rarity 5</div>
+                    </div>
+                    
+                    <h1 id="car-title">Porsche 911 GT3 RS</h1>
+                </div>
+                
+                <div class="specifications-grid">
+                    <div class="spec-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M13 2L3 14h9l-1 8 10-16h-9l1-4z"></path>
+                        </svg>
+                        <span class="spec-title">Horsepower</span>
+                        <span id="horsepower" class="spec-value">518 hp</span>
+                    </div>
+                    
+                    <div class="spec-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M12 6v6l4 2"></path>
+                        </svg>
+                        <span class="spec-title">Speed</span>
+                        <span id="top-speed" class="spec-value">184 mph</span>
+                    </div>
+                    
+                    <div class="spec-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                        <span class="spec-title">0-60</span>
+                        <span id="acceleration" class="spec-value">3.2 sec</span>
+                    </div>
+                </div>
+                
+                <div class="section">
+                    <h2>Overview</h2>
+                    <div class="details-container">
+                        <div class="detail-row">
+                            <span class="detail-label">Owner</span>
+                            <span id="owner-name" class="detail-value">Loading...</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Year</span>
+                            <span id="year" class="detail-value">2021-2023</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Collected</span>
+                            <span id="date-collected" class="detail-value">2 months ago</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Trim</span>
+                            <span id="trim" class="detail-value">RS</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Value</span>
+                            <span id="price" class="detail-value">$225,250</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Engine Type</span>
+                            <span id="engine-type" class="detail-value">4.0L Flat-6</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Drivetrain</span>
+                            <span id="drivetrain" class="detail-value">RWD</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Weight</span>
+                            <span id="weight" class="detail-value">3,197 lbs</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="section">
+                    <h2>Description</h2>
+                    <p id="description">The 2023 Porsche 911 GT3 RS is the most extreme, track-focused version of the 992-generation 911. It features advanced aerodynamics, including a massive rear wing with DRS, and a naturally aspirated 4.0L flat-six engine.</p>
+                </div>
+                
+                <div class="app-promo">
+                    <h3>Collect, share, and upgrade cars in CarBN</h3>
+                    <p>Download the app to start your own car collection!</p>
+                    <div class="app-buttons">
+                        <a href="https://apps.apple.com/ca/app/carbn/id6742416359" id="app-store-link" class="app-button testflight-button">
+                            Download now!
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>© 2025 CarBN. All rights reserved.</p>
+            <div class="share-buttons">
+                <button id="share-twitter" class="share-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
+                    </svg>
+                    Twitter
+                </button>
+                <button id="share-facebook" class="share-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                    </svg>
+                    Facebook
+                </button>
+                <button id="copy-link" class="share-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                        <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                    </svg>
+                    Copy Link
+                </button>
+            </div>
+        </footer>
+    </div>
+    
+    <script src="/share/static/script.js"></script>
+</body>
+</html>

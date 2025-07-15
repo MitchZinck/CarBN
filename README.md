@@ -1,3 +1,7 @@
+[![Download on the App Store](https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg)](https://apps.apple.com/ca/app/carbn/id6742416359)
+
+Frontend IOS App -> https://github.com/MitchZinck/CarBN-iOS
+
 # CarBN Backend
 
 A Go-based backend service for CarBN, an iOS car-collecting app that uses AI to recognize and catalog cars from photos. Users can build collections, trade with friends, and participate in a social feed system.
